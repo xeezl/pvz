@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		img{
+			width: 100px; 
+			position: absolute; 
+			display: none;
+		}
+
+	
+	</style>
+</head>
+<body>
+	<div style="background-image: url(game.png); height: 1000px; background-size: 100% 100%">
+		
+		<button class="btn btn-warning btn_flower_size"  style="position: absolute;  margin-left: 20%; margin-top: 3%">Увеличить цветы</button>
+		<button class="btn btn-success btn_shooter_size" style="position: absolute;  margin-left: 30%; margin-top: 3%" >Увеличить горох</button>
+		<button class="btn btn-success btn_shooter_upg" style="position: absolute;  margin-left: 40%; margin-top: 3%" >Улучшить горох</button>
+		<button class="btn btn-danger btn_torch_size" style="position: absolute;  margin-left: 50%; margin-top: 3%" >Увеличить пень</button>
+		<button class="btn btn-danger btn_torch_upg" style="position: absolute;  margin-left: 60%; margin-top: 3%" >Улучшить пень</button>
+		<button class="btn btn-success btn_zombie_attack" style="position: absolute;  margin-left: 70%; margin-top: 3%" >Атака зомби</button>
+
+		<!--цветы 1 ряд-->
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 13%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 19%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 25%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 31%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 37%; ">
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 17%; ">PLANT</button>	
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 23%; ">PLANT</button>
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 29%; ">PLANT</button>
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 35%; ">PLANT</button>
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 41%; ">PLANT</button>
+
+		<!--горох 2 ряд-->
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 13%; ">		
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 19%; ">	
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 25%; ">	
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 31%; ">
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 37%; ">
+		<img class="shooter2" src="peashooter2.png"  style=" margin-left: 40%; margin-top: 13%; display: none;">		
+		<img class="shooter2" src="peashooter2.png"  style=" margin-left: 40%; margin-top: 19%; display: none; ">	
+		<img class="shooter2" src="peashooter2.png"  style=" margin-left: 40%; margin-top: 25%; display: none; ">	
+		<img class="shooter2" src="peashooter2.png"  style=" margin-left: 40%; margin-top: 31%; display: none; ">
+		<img class="shooter2" src="peashooter2.png"  style=" margin-left: 40%; margin-top: 37%; display: none; ">
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 17%; ">PLANT</button>
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 23%; ">PLANT</button>	
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 29%; ">PLANT</button>
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 35%; ">PLANT</button>
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 41%; ">PLANT</button>		
+
+		<img class="torch" src="torchwood.png" style=" margin-left: 47%; margin-top: 13%; ">
+		<img class="torch" src="torchwood.png" style=" margin-left: 47%; margin-top: 19%; ">
+		<img class="torch" src="torchwood.png" style=" margin-left: 47%; margin-top: 25%; ">
+		<img class="torch" src="torchwood.png" style=" margin-left: 47%; margin-top: 31%; ">
+		<img class="torch" src="torchwood.png" style=" margin-left: 47%; margin-top: 37%; ">
+		<img class="torch2" src="torchwood2.png" style=" margin-left: 47%; margin-top: 13%; display: none;">
+		<img class="torch2" src="torchwood2.png" style=" margin-left: 47%; margin-top: 19%; display: none;">
+		<img class="torch2" src="torchwood2.png" style=" margin-left: 47%; margin-top: 25%; display: none;">
+		<img class="torch2" src="torchwood2.png" style=" margin-left: 47%; margin-top: 31%; display: none;">
+		<img class="torch2" src="torchwood2.png" style=" margin-left: 47%; margin-top: 37%; display: none;">
+		<button class="torch_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 17%; ">PLANT</button>
+		<button class="torch_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 23%; ">PLANT</button>	
+		<button class="torch_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 29%; ">PLANT</button>
+		<button class="torch_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 35%; ">PLANT</button>
+		<button class="torch_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 41%; ">PLANT</button>
+		<!--зомби-->
+		<img class="zombies" src="zombie1.png" style="margin-left: 70%; margin-top: 13%;">
+		<img class="zombies" src="zombie2.png" style="margin-left: 70%; margin-top: 19%;">
+		<img class="zombies" src="zombie2.png" style="margin-left: 70%; margin-top: 25%;">
+		<img class="zombies" src="zombie4.png" style="margin-left: 70%; margin-top: 31%;">
+		<img class="zombies" src="zombie4.png" style="margin-left: 70%; margin-top: 37%;">
+	</div>
+<script>
+	let flowers = document.querySelectorAll(".flower");
+	let shooter = document.querySelectorAll(".shooter");
+	let shooter2 = document.querySelectorAll(".shooter2")
+	let zombies = document.querySelectorAll(".zombies")
+	let flower_btn = document.querySelectorAll(".flower_btn");
+	let shooter_btn = document.querySelectorAll(".shooter_btn");
+	let torch = document.querySelectorAll(".torch");
+	let torch2 = document.querySelectorAll(".torch2")
+	let torch_btn = document.querySelectorAll(".torch_btn")
+	let shot = 0
+	let pen = 0
+	let step = function(){
+		for(let index = 0; index<6; index = index + 1){
+			zombies[index].style.marginLeft = "60%"
+		}
+	}
+
+	//нажатие на цветы
+	flower_btn[0].onclick = function(){
+		flowers[0].style.display = "block"
+		flower_btn[0].style.display = "none"
+	}    
+	flower_btn[1].onclick = function(){
+		flowers[1].style.display = "block"
+		flower_btn[1].style.display = "none"
+	}   
+	flower_btn[2].onclick = function(){
+		flowers[2].style.display = "block"
+		flower_btn[2].style.display = "none"
+	}   
+	flower_btn[3].onclick = function(){
+		flowers[3].style.display = "block"
+		flower_btn[3].style.display = "none"
+	}   
+	flower_btn[4].onclick = function(){
+		flowers[4].style.display = "block"
+		flower_btn[4].style.display = "none"
+	}   
+
+
+	//нажатие на горох
+	shooter_btn[0].onclick = function(){
+		shooter[0].style.display = "block"
+		shooter_btn[0].style.display = "none"
+	}   
+	shooter_btn[1].onclick = function(){
+		shooter[1].style.display = "block"
+		shooter_btn[1].style.display = "none"
+	}   
+	shooter_btn[2].onclick = function(){
+		shooter[2].style.display = "block"
+		shooter_btn[2].style.display = "none"
+	}   
+	shooter_btn[3].onclick = function(){
+		shooter[3].style.display = "block"
+		shooter_btn[3].style.display = "none"
+	}   
+	shooter_btn[4].onclick = function(){
+		shooter[4].style.display = "block"
+		shooter_btn[4].style.display = "none"
+	}
+
+	//3 ряд
+	torch_btn[0].onclick = function(){
+		torch[0].style.display = "block"
+		torch_btn[0].style.display = "none"
+	}
+	torch_btn[1].onclick = function(){
+		torch[1].style.display = "block"
+		torch_btn[1].style.display = "none"
+	}
+	torch_btn[2].onclick = function(){
+		torch[2].style.display = "block"
+		torch_btn[2].style.display = "none"
+	}
+	torch_btn[3].onclick = function(){
+		torch[3].style.display = "block"
+		torch_btn[3].style.display = "none"
+	}
+	torch_btn[4].onclick = function(){
+		torch[4].style.display = "block"
+		torch_btn[4].style.display = "none"
+	}
+	document.querySelector(".btn_flower_size").onclick = function(){
+		for(let index = 0; index<6; index = index + 1){
+		flowers[index].style.width = "200px"
+		}
+	}
+	document.querySelector(".btn_shooter_size").onclick = function(){
+		for(let index = 0; index<6; index = index + 1){
+		shooter[index].style.width = "200px"
+		}
+	}
+	document.querySelector(".btn_torch_size").onclick = function(){
+		for(let index = 0; index<6; index = index + 1){
+		torch[index].style.width = "200px"
+		}
+	}
+	document.querySelector(".btn_shooter_upg").onclick = function(){
+		for(let index = 0; index<6; index = index + 1){
+			shooter[index].style.display = "none"
+			shooter2[index].style.display = "block"
+		}
+	}
+	document.querySelector(".btn_zombie_attack").onclick = function(){
+		for(let index = 0; index<5; index = index + 1){
+			zombies[index].style.display = "block"
+		}
+		setTimeout(step,3000);
+	}
+	document.querySelector(".btn_torch_upg").onclick = function(){
+		for(let index = 0; index<6; index = index + 1){
+			torch[index].style.display = "none"
+			torch2[index].style.display = "block"
+		}
+	}
+</script>
+</body>
+</html>
